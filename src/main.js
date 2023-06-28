@@ -1,8 +1,8 @@
-import { Telegraf, session } from 'telegraf';
-import { message } from 'telegraf/filters';
-import { code } from 'telegraf/format';
-import ogg from './ogg';
-import openai from './openai';
+const { code } = require('telegraf/format');
+const { message } = require('telegraf/filters');
+const { Telegraf, session } = require('telegraf');
+const openai = require('./openai');
+const ogg = require('./ogg');
 
 const INITIAL_SESSION = {
   messages: [],
