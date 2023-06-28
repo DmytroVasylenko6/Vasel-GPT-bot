@@ -1,5 +1,6 @@
-import { Configuration, OpenAIApi } from 'openai';
-import { createReadStream } from 'fs';
+const { createReadStream } = require('fs');
+
+const { Configuration, OpenAIApi } = require('openai');
 
 class OpenAI {
   roles = {
