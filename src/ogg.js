@@ -1,5 +1,3 @@
-const { fileURLToPath } = require('url');
-
 const { dirname, resolve } = require('path');
 
 const { createWriteStream } = require('fs');
@@ -9,7 +7,7 @@ const installer = require('@ffmpeg-installer/ffmpeg');
 const ffmpeg = require('fluent-ffmpeg');
 
 const axios = require('axios');
-const { removeFile } = require('./utils');
+const removeFile = require('./utils');
 
 // const __dirname = dirname(fileURLToPath(import.meta.url));
 
