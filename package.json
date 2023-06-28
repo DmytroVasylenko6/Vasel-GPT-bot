@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development NODE_OPTIONS='--experimental-specifier-resolution=node' nodemon ./src/main.js",
-    "start": "cross-env NODE_ENV=production NODE_OPTIONS='--experimental-specifier-resolution=node' node ./src/main.js",
+    "start": "node ./src/main.js",
     "lint": "eslint ./src"
   },
   "keywords": [],
