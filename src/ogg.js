@@ -11,7 +11,7 @@ const ffmpeg = require('fluent-ffmpeg');
 const axios = require('axios');
 const { removeFile } = require('./utils');
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+// const __dirname = dirname(fileURLToPath(import.meta.url));
 
 class OggConverter {
   constructor() {
@@ -57,4 +57,4 @@ class OggConverter {
 }
 
 const ogg = new OggConverter();
-export default ogg;
+module.exports = ogg;

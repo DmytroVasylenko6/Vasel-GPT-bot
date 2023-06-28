@@ -42,4 +42,4 @@ class OpenAI {
 }
 
 const openai = new OpenAI(process.env.OPENAI_KEY);
-export default openai;
+module.exports = openai;
